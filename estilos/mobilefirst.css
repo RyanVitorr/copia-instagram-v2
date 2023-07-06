@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* barra de navegação topo */
+
+header {
+    height: 55px;  
+}
+
+nav#barra-navegacao {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 9px;
+    width: 100%;
+    height: 36px;
+
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+nav .logo-insta {
+    width: 6.5em;
+    margin-top: 2px;
+}
+
+div#busca > input {
+    height: 33px;
+    width: 260px;
+
+    text-align: center;
+    
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(209, 206, 206, 0.466);
+}
+
+nav .not-nav {
+    width: 1.5em;
+    margin-right: 20px;
+}
+
+/* barra de navegação fundo*/
+
+section#navegation-2 {
+    position: fixed;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; 
+}
+
+nav#nav-infos {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-top: 1px solid rgba(209, 206, 206, 0.466);
+}
+
+nav#nav-infos > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-insta-2 {
+    display: none;
+}
+
+#pesquisar {
+    display: none;
+}
+
+#notificacoes {
+    display: none;
+}
+
+#criar {
+    display: none;
+}
+
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* storys */
+
+section#story {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 90vw;
+    height: 107px;
+    margin: 13px 0px; 
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 7px;
+}
+
+div.perfil-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0px 0px 16px;
+}
+
+
+div.perfil-img {
+    height: 52px;
+    width: 52px;
+    border-radius: 50% 50%;
+    border: 1px solid black;
+}
+
+div.perfil-story > p {
+    font-size: 0.9em;
+}
+
+/* publicações */
+
+section#publicacoes {
+    width: 90vw;
+    height: 70vh;
+}
+
+div.publicacoes {
+    width: 90vw;
+    height: 618px;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+div.superior-publi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+}
+
+div.perfil-img-publi {
+    height: 35px;
+    width: 35px;
+
+    margin-left: 10px;
+
+    border-radius: 50% 50%;
+    border: 1px  solid black;
+}
+
+div.superior-publi > p {
+    margin-left: -285px;
+}
+
+div.superior-publi > span {
+    margin: 0 10px 5px 0;
+}
+
+div.meio-publi {
+    height: 418px;
+}
+
+div.inferior-publi {
+    height: 153px;
+}
+
+div#final {
+    height: 20px;
+}
