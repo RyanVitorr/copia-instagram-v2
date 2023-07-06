@@ -71,6 +71,43 @@ nav#nav-infos > ul {
     align-items: center;
 }
 
+#home > a > p {
+    display: none;
+}
+
+img.home {
+    width: 1.6em;
+}
+
+#reels > a > p {
+    display: none;
+}
+
+img.reels {
+    width: 1.5em;
+}
+
+#explorar > a > p {
+    display: none;
+}
+
+img.explorar {
+    width: 1.7em;
+}
+
+
+#perfil {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50% 50%;
+}
+
+#perfil > a > p {
+    display: none;
+}
+
+
 #logo-insta-2 {
     display: none;
 }
