@@ -29,6 +29,7 @@ nav#barra-navegacao {
 nav .logo-insta {
     width: 6.5em;
     margin-top: 2px;
+    cursor: pointer;
 }
 
 div#busca > input {
@@ -45,6 +46,7 @@ div#busca > input {
 nav .not-nav {
     width: 1.5em;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 /* barra de navegação fundo*/
@@ -67,8 +69,17 @@ nav#nav-infos {
 
 nav#nav-infos > ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: 40px;
+    width: 400px;
+    margin-left: 28px;
+}
+
+/* icones do menu inferior */
+
+nav#nav-infos > ul > li {
+    margin-top: 3px;
 }
 
 #home > a > p {
@@ -76,7 +87,7 @@ nav#nav-infos > ul {
 }
 
 img.home {
-    width: 1.6em;
+    width: 1.5em;
 }
 
 #reels > a > p {
@@ -84,7 +95,7 @@ img.home {
 }
 
 img.reels {
-    width: 1.5em;
+    width: 1.3em;
 }
 
 #explorar > a > p {
@@ -92,15 +103,33 @@ img.reels {
 }
 
 img.explorar {
-    width: 1.7em;
+    width: 1.6em;
+}
+
+#publicar > a > p {
+    display: none;
+}
+
+img.publicar {
+    width: 1.3em;
+}
+
+#mensagens > a > p {
+    display: none;
+}
+
+img.mensagens {
+    width: 1.4em;
 }
 
 
 #perfil {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 1px solid black;
     border-radius: 50% 50%;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
 
 #perfil > a > p {
@@ -153,6 +182,7 @@ div.perfil-story {
     justify-content: center;
     align-items: center;
     margin: 4px 0px 0px 16px;
+    cursor: pointer;
 }
 
 
@@ -169,6 +199,8 @@ div.perfil-story > p {
 
 /* publicações */
 
+/* config geral*/
+
 section#publicacoes {
     width: 90vw;
     height: 70vh;
@@ -182,11 +214,14 @@ div.publicacoes {
     margin-bottom: 25px;
 }
 
+/* parte supeior da publi*/
+
 div.superior-publi {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 45px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
 }
 
 div.perfil-img-publi {
@@ -197,22 +232,118 @@ div.perfil-img-publi {
 
     border-radius: 50% 50%;
     border: 1px  solid black;
+    cursor: pointer;
 }
 
 div.superior-publi > p {
-    margin-left: -285px;
+    margin-left: -265px;
 }
 
 div.superior-publi > span {
     margin: 0 10px 5px 0;
 }
 
+/* parte do meio da publi*/
+
 div.meio-publi {
     height: 418px;
+  
 }
+
+.img-publi-1 {
+    height: 418px;
+
+    background: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* parte inferior da publi*/
+
+/* config geral*/
 
 div.inferior-publi {
     height: 153px;
+}
+
+/* interação */
+
+div.interacao {
+    height: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+div.interacao > ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+div.interacao > ul > li {
+    margin: 10px 0px 0px 15px; 
+}
+
+/* interação icones*/
+
+.cora-inte {
+    width: 1.6em;
+}
+
+.coment-inte {
+    width: 1.3em;
+}
+
+.enviar-inte {
+    width: 1.5em;
+}
+
+.enviar-inte {
+    width: 1.3em;
+}
+
+.salvar-inte {
+    width: 1.3em;
+    height: 18px;
+    margin-left: 250px;
+}
+
+
+/* descrição */
+
+
+div.text-descricao > p {
+    font-size: 0.9em;
+    margin: 5px 0 0 15px;
+}
+
+div.text-descricao > p > a {
+    color: black;
+}
+
+p.todos-comentarios {
+    color: rgba(0, 0, 0, 0.664);
+    padding-top: 5px
+}
+
+div.hora-traducao {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    height: 28px;
+    padding-left: 15px;
+}
+
+div.hora-traducao > p {
+    font-size: 0.7em;
+    color: rgba(0, 0, 0, 0.63);
+    margin-right: 10px;
+} 
+
+div.hora-traducao > a {
+    font-size: 0.9em;
+    color: black;
 }
 
 div#final {
