@@ -26,15 +26,73 @@ nav#barra-navegacao {
     border: 1px solid rgba(0, 0, 0, 0.233);
 }
 
-nav .logo-insta {
+/* Logo Instagram*/
+
+div#logo-insta {
+    position: relative;
+    display: flex;
+}
+
+div .logo-insta {
     width: 6.5em;
     margin-top: 2px;
     cursor: pointer;
 }
 
+div .seta-baixo {
+    width: 0.6em;
+    height: 0.6em;
+    margin: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+/* infos de seguindo e favoritos*/
+
+div#segui-fav {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 130px; 
+}
+
+div#segui-fav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 110px;
+    background-color: white;
+    border-radius: 8px;  
+}
+
+div#segui-fav > ul > li {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.986);
+    cursor: pointer;
+}
+
+#seguindo {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 8px 8px 0 0;
+}
+
+#favoritos {
+    border-radius: 0px 0px 8px 8px;
+}
+
+div#segui-fav > ul > li:hover {
+    background-color: rgba(241, 241, 241, 0.925);
+}
+
+/* Barra de pesquisa e ícone de notificação*/
+
 div#busca > input {
     height: 33px;
-    width: 260px;
+    width: 235px;
 
     text-align: center;
     
@@ -49,25 +107,29 @@ nav .not-nav {
     cursor: pointer;
 }
 
-/* barra de navegação fundo*/
+/* barra de navegação inferior*/
 
 section#navegation-2 {
-    position: fixed;
     display: flex;
     align-items: end;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100vh; 
+
+    position: absolute;
+    bottom: 0px;
+    position: fixed;
+
 }
 
-nav#nav-infos {
+menu#nav-infos {
     width: 100%;
     height: 40px;
     background-color: white;
     border-top: 1px solid rgba(209, 206, 206, 0.466);
 }
 
-nav#nav-infos > ul {
+menu#nav-infos > ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -78,7 +140,7 @@ nav#nav-infos > ul {
 
 /* icones do menu inferior */
 
-nav#nav-infos > ul > li {
+menu#nav-infos > ul > li {
     margin-top: 3px;
 }
 
