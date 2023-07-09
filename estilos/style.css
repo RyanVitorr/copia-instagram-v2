@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/*Typical Device Breakpoints
+----------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 922px
+Desktops: 922px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 922px) {
+   
+   
+   
+   
+    /* Header lateral*/
+
+    section#navegation-menu {
+        width: 70px;
+    }
+
+    header {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    section#navegation-1 {
+        display: none;
+    }
+
+    section#navegation-2 {
+        width: 70px;
+        height: 100vh;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    menu#nav-infos {
+        width: 100%;
+        height: 100%;
+    }
+    
+    menu#nav-infos > ul {
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    menu#nav-infos > ul > li {       
+        margin: 11px 0px;
+        padding: 0px;
+
+    }
+
+
+    /* icones do menu lateral */
+
+
+    /* logo do instagram v2 */
+    li#logo-insta-2 {
+        display: block;
+    }
+
+    img.logo-insta-2 {
+        width: 1.8em;
+        margin: 20px 0px 20px 0px;
+    }
+
+    #logo-insta-2 > a > p {
+        display: none;
+    }
+
+
+    /* icone home */
+    #home > a > p {
+        display: none;
+    }
+
+    img.home {
+        width: 1.5em;
+    }
+
+
+    /* icone pesquisar */
+    #pesquisar {
+        display: block;
+    }
+
+    img.pesquisar {
+        width: 1.4em;
+    }
+
+    #pesquisar >a >p {
+        display: none;
+    }
+    /* icone explorar */
+    #explorar {
+        display: block;
+    }
+
+    img.explorar {
+        width: 1.6em;
+    }
+
+    #explorar > a > p {
+        display: none;
+    }
+
+
+    /* icone reels */
+    #reels {
+        display: block;
+    }
+
+    #reels > a > p {
+        display: none;
+    }
+
+    img.reels {
+        width: 1.3em;
+    }
+
+
+    /* icone criar */
+    #criar {
+        display: block;
+    }
+
+    img.criar {
+        width: 1.3em;
+    }
+
+    #criar > a > p {
+        display: none;
+    }
+ 
+
+    /* icone publicar */
+    #publicar {
+        display: none;
+    }
+    
+    #publicar > a > p {
+        display: none;
+    }
+
+    /* icone mensagens */
+    #mensagens > a > p {
+        display: none;
+    }
+
+
+    /* icone notificações*/
+    #notificacoes {
+        display: block;
+    }
+
+    .notificacoes {
+        width: 1.5em;
+    }
+
+    #notificacoes > a > p {
+        display: none;
+    }
+
+
+    /* icone de perfil*/
+    #perfil {
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    #perfil > a > p {
+        display: none;
+    }
+
+
+
+    /* main */
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    /* storys */
+
+    section#story {
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        width: 415px;
+        height: 107px;
+        margin: 28px 0px 15px 0px;
+        border: 1px solid rgba(0, 0, 0, 0.233);
+        border-radius: 7px;
+    }
+
+    div.perfil-story {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 4px 0px 0px 16px;
+        cursor: pointer;
+    }   
+
+
+    div.perfil-img {
+        height: 52px;
+        width: 52px;
+        border-radius: 50% 50%;
+        border: 1px solid black;
+    }
+
+    div.perfil-story > p {
+        font-size: 0.9em;
+    }
+
+
+    /* publicações */
+
+    /* config geral*/
+
+    section#publicacoes {
+        width: 415px;
+        height: 618px;
+    }
+    
+    div.publicacoes {
+        width: 415px;
+        height: 618px;
+        border: 1px solid rgba(0, 0, 0, 0.233);
+        border-radius: 7px;
+        margin-bottom: 25px;
+    }
+}
