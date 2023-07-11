@@ -10,16 +10,19 @@
 /* barra de navegação topo */
 
 header {
+    width: 100%;
     height: 55px;  
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233)
 }
 
 section#navegation-1 {
     width: 100%;
-    height: 55px;
+    height: 100%;
+    position: fixed;
 }
 
 nav#barra-navegacao {
-    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,7 +31,6 @@ nav#barra-navegacao {
     height: 36px;
 
     background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.233);
 }
 
 /* Logo Instagram*/
@@ -124,7 +126,8 @@ section#navegation-2 {
     position: absolute;
     bottom: 0px;
     position: fixed;
-    border-top: 1px solid rgba(209, 206, 206, 0.466);
+    border-top: 1px solid rgba(0, 0, 0, 0.233);
+    background-color: white;
 
 }
 
@@ -133,7 +136,7 @@ menu#nav-infos {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: white;
+
 }
 
 menu#nav-infos > ul {
@@ -142,7 +145,6 @@ menu#nav-infos > ul {
     align-items: center;
     height: 100%;
     width: 100%;
-    border: 1px solid black;
     padding-left: 20px;
 }
 
@@ -152,77 +154,57 @@ menu#nav-infos > ul > li {
     margin-right: 40px;
 }
 
-#home > a > p {
-    display: none;
-}
+/* icone home */
 
-img.home {
-    width: 1.5em;
-}
+#home > a > p {display: none;}
+img.home {width: 1.5em;}
 
-#reels > a > p {
-    display: none;
-}
+/* icone reels */
 
-img.reels {
-    width: 1.3em;
-}
+#reels > a > p {display: none;}
+img.reels {width: 1.3em;}
 
-#explorar > a > p {
-    display: none;
-}
+/* icone explorar*/
 
-img.explorar {
-    width: 1.6em;
-}
+#explorar > a > p {display: none;}
+img.explorar {width: 1.6em;}
 
-#publicar > a > p {
-    display: none;
-}
+/* icone publicar */
 
-img.publicar {
-    width: 1.3em;
-}
+#publicar > a > p {display: none;}
+img.publicar {width: 1.3em;}
 
-#mensagens > a > p {
-    display: none;
-}
+/* icone mensagens */
+#mensagens > a > p {display: none;}
+img.mensagens {width: 1.4em;}
 
-img.mensagens {
-    width: 1.4em;
-}
-
-
+/* perfil*/
 #perfil {
     width: 20px;
     height: 20px;
     border: 1px solid black;
     border-radius: 50% 50%;
     margin-bottom:  5px;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
-
-#perfil > a > p {
-    display: none;
-}
+#perfil > a > p {display: none;}
 
 
-#logo-insta-2 {
-    display: none;
-}
+/* icone perfil-2*/
+#perfil-2 {display: none;}
 
-#pesquisar {
-    display: none;
-}
+/* icone logos*/
+#logo-insta-2 {display: none;}
+#logo-insta-3 {display: none;}
 
-#notificacoes {
-    display: none;
-}
+/* icone pesquisar */
+#pesquisar {display: none}
 
-#criar {
-    display: none;
-}
+/* icone notificações */
+#notificacoes {display: none;}
+
+/* icone criar */
+#criar {display: none;}
 
 
 /* main */
