@@ -13,7 +13,6 @@ header {
     width: 100%;
     height: 55px;  
     background-color: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.233)
 }
 
 section#navegation-1 {
@@ -29,7 +28,7 @@ nav#barra-navegacao {
     padding: 9px;
     width: 100%;
     height: 36px;
-
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
     background-color: white;
 }
 
@@ -186,6 +185,9 @@ img.mensagens {width: 1.4em;}
     border-radius: 50% 50%;
     margin-bottom:  5px;
     cursor: pointer;  
+
+    background: url(../img/insta-story.png);
+    background-size: cover
 }
 #perfil > a > p {display: none;}
 
@@ -234,6 +236,7 @@ section#story {
     margin: 13px 0px; 
     border: 1px solid rgba(0, 0, 0, 0.233);
     border-radius: 7px;
+    overflow: hidden;
 }
 
 div.perfil-story {
@@ -250,8 +253,12 @@ div.perfil-img {
     height: 52px;
     width: 52px;
     border-radius: 50% 50%;
-    border: 1px solid black;
+
+    background: url(../img/insta-story.png);
+    background-size: cover;
 }
+
+
 
 div.perfil-story > p {
     font-size: 0.9em;
@@ -287,12 +294,12 @@ div.superior-publi {
 div.perfil-img-publi {
     height: 35px;
     width: 35px;
-
     margin-left: 10px;
-
     border-radius: 50% 50%;
-    border: 1px  solid black;
     cursor: pointer;
+
+    background: url(../img/insta-story.png);
+    background-size: cover;
 }
 
 div.superior-publi > p {

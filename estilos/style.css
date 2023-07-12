@@ -505,6 +505,10 @@ Grandes telas: acima de 1200px
        width: 50px;
        height: 50px;
        border-radius: 50% 50%;
+       cursor: pointer;
+
+       background: url(../img/foto-perfil-v2.png);
+       background-size: cover;
        border: 1px solid black;
     }
 
@@ -572,8 +576,10 @@ Grandes telas: acima de 1200px
         margin-top: 8px;
 
         border-radius: 50% 50%;
-        border: 1px solid black;
         cursor: pointer;
+
+        background: url(../img/insta-story.png);
+        background-size: cover
     }
 
     section#sugestoes-main > div > ul > li.nome-sugestoes-main {
@@ -720,12 +726,18 @@ Grandes telas: acima de 1200px
     #perfil {display: none;}
 
     /* perfil-2*/
+   
+    #perfil-2 {
+        display: block;
+    }
+
     .img-perfil-2 {
         width: 23px;
         height: 23px;
         border-radius: 50% 50%;
         border: 1px solid black;
     }
+    
     #perfil-2 > a >p {
         display: block;
     }
