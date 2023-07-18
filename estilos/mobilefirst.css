@@ -99,9 +99,8 @@ div#segui-fav > ul > li:hover {
 div#busca > input {
     height: 33px;
     width: 235px;
-
-    text-align: center;
-    
+    text-align: left;
+    padding: 10px;
     border: none;
     border-radius: 8px;
     background-color: rgba(209, 206, 206, 0.466);
@@ -186,7 +185,7 @@ img.mensagens {width: 1.4em;}
     margin-bottom:  5px;
     cursor: pointer;  
 
-    background: url(../img/insta-story.png);
+    background: url(../img/perfil.png);
     background-size: cover
 }
 #perfil > a > p {display: none;}
@@ -244,17 +243,26 @@ div.perfil-story {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4px 0px 0px 16px;
+    margin: 4px 0px 0px 14px;
     cursor: pointer;
 }
 
+div#border-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    background: linear-gradient(to top right, rgb(247, 238, 162), rgb(250, 206, 12), rgb(250, 99, 30), rgb(248, 68, 68), rgb(255, 2, 255), rgb(255, 2, 255));
+    border-radius: 50% 50%;
+    
+}
 
 div.perfil-img {
     height: 52px;
     width: 52px;
     border-radius: 50% 50%;
-
-    background: url(../img/insta-story.png);
+    background: url(../img/perfil.png);
     background-size: cover;
 }
 
@@ -296,9 +304,10 @@ div.perfil-img-publi {
     width: 35px;
     margin-left: 10px;
     border-radius: 50% 50%;
+    border: 1px solid black;
     cursor: pointer;
 
-    background: url(../img/insta-story.png);
+    background: url(../img/perfil.png);
     background-size: cover;
 }
 
