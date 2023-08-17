@@ -238,7 +238,7 @@ section#story {
     overflow: hidden;
 }
 
-div.perfil-story {
+.perfil-story {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,11 +329,21 @@ div.meio-publi {
 .img-publi-1 {
     height: 418px;
 
-    background: url();
+    background: url(../img/veneza.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.img-publi-2 {
+    height: 418px;
+
+    background: url(../img/rua.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 /* parte inferior da publi*/
