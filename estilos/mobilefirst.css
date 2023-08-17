@@ -21,7 +21,7 @@ section#navegation-1 {
     position: fixed;
 }
 
-nav#barra-navegacao {
+#barra-navegacao {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,18 +34,18 @@ nav#barra-navegacao {
 
 /* Logo Instagram*/
 
-div#logo-insta {
+#logo-insta {
     position: relative;
     display: flex;
 }
 
-div .logo-insta {
+.logo-insta {
     width: 6.5em;
     margin-top: 2px;
     cursor: pointer;
 }
 
-div .seta-baixo {
+.seta-baixo {
     width: 0.6em;
     height: 0.6em;
     margin: 10px 0px 0px 10px;
@@ -53,15 +53,14 @@ div .seta-baixo {
 }
 
 /* infos de seguindo e favoritos*/
-
-div#segui-fav {
+#segui-fav {
     display: none;
     position: absolute;
     top: 8px;
     left: 130px; 
 }
 
-div#segui-fav > ul {
+#segui-fav > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +71,7 @@ div#segui-fav > ul {
     border-radius: 8px;  
 }
 
-div#segui-fav > ul > li {
+#segui-fav > ul > li {
     text-align: center;
     height: 100%;
     width: 100%;
@@ -90,13 +89,13 @@ div#segui-fav > ul > li {
     border-radius: 0px 0px 8px 8px;
 }
 
-div#segui-fav > ul > li:hover {
+#segui-fav > ul > li:hover {
     background-color: rgba(241, 241, 241, 0.925);
 }
 
 /* Barra de pesquisa e ícone de notificação*/
 
-div#busca > input {
+#busca > input {
     height: 33px;
     width: 235px;
     text-align: left;
@@ -106,7 +105,7 @@ div#busca > input {
     background-color: rgba(209, 206, 206, 0.466);
 }
 
-nav .not-nav {
+.not-nav {
     width: 1.5em;
     margin-right: 20px;
     cursor: pointer;
@@ -129,7 +128,7 @@ section#navegation-2 {
 
 }
 
-menu#nav-infos {
+#nav-infos {
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -137,7 +136,7 @@ menu#nav-infos {
 
 }
 
-menu#nav-infos > ul {
+#nav-infos > ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +184,7 @@ img.mensagens {width: 1.4em;}
     margin-bottom:  5px;
     cursor: pointer;  
 
-    background: url(../img/perfil.png);
+    background: url(../img/pexels-jonathan-goncalves-17903054.jpg);
     background-size: cover
 }
 #perfil > a > p {display: none;}
@@ -219,7 +218,7 @@ main {
     align-items: center;
 }
 
-div#main-content {
+#main-content {
     align-items: center;
     justify-content: center;
 }
@@ -247,7 +246,7 @@ section#story {
     cursor: pointer;
 }
 
-div#border-color {
+.border-color {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,17 +257,43 @@ div#border-color {
     
 }
 
-div.perfil-img {
+.perfil-img {
     height: 52px;
     width: 52px;
     border-radius: 50% 50%;
-    background: url(../img/perfil.png);
+}
+
+#perfil-img-1 {
+    background: url(../img/pexels-victor-oluwa-17928235.jpg);
     background-size: cover;
 }
 
+#perfil-img-2 {
+    background: url(../img/pexels-santiago-sauceda-gonzález-17910266.jpg);
+    background-size: cover;
+}
 
+#perfil-img-3 {
+    background: url(../img/pexels-daniel-xavier-1239291.jpg);
+    background-size: cover;
+}
 
-div.perfil-story > p {
+#perfil-img-4 {
+    background: url(../img/pexels-fabian-reck-17888977.jpg);
+    background-size: cover;
+}
+
+#perfil-img-5 {
+    background: url(../img/pexels-andrea-piacquadio-733872.jpg);
+    background-size: cover;
+}
+
+#perfil-img-6 {
+    background: url(../img/pexels-vinicius-wiesehofer-1130626\ \(1\).jpg);
+    background-size: cover;
+}
+
+.perfil-story > p {
     font-size: 0.9em;
 }
 
@@ -280,8 +305,7 @@ section#publicacoes {
     width: 410px;
     height: 618px;
 }
-
-div.publicacoes {
+.publicacoes {
     width: 410px;
     height: 618px;
     border: 1px solid rgba(0, 0, 0, 0.233);
@@ -291,7 +315,7 @@ div.publicacoes {
 
 /* parte supeior da publi*/
 
-div.superior-publi {
+.superior-publi {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -299,7 +323,7 @@ div.superior-publi {
     border-bottom: 1px solid rgba(0, 0, 0, 0.233);
 }
 
-div.perfil-img-publi {
+.perfil-img-publi-1 {
     height: 35px;
     width: 35px;
     margin-left: 10px;
@@ -307,28 +331,40 @@ div.perfil-img-publi {
     border: 1px solid black;
     cursor: pointer;
 
-    background: url(../img/perfil.png);
+    background: url(../img/pexels-ali-pazani-2787341.jpg);
     background-size: cover;
 }
 
-div.superior-publi > p {
+.perfil-img-publi-2 {
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    border-radius: 50% 50%;
+    border: 1px solid black;
+    cursor: pointer;
+
+    background: url(../img/pexels-edgardo-andrade-17843273.jpg);
+    background-size: cover;
+}
+
+
+.superior-publi > p {
     margin-left: -265px;
 }
 
-div.superior-publi > span {
+.superior-publi > span {
     margin: 0 10px 5px 0;
 }
 
 /* parte do meio da publi*/
 
-div.meio-publi {
+.meio-publi {
     height: 418px;
   
 }
 
 .img-publi-1 {
     height: 418px;
-
     background: url(../img/veneza.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -337,7 +373,6 @@ div.meio-publi {
 
 .img-publi-2 {
     height: 418px;
-
     background: url(../img/rua.jpeg);
     background-size: cover;
     background-repeat: no-repeat;

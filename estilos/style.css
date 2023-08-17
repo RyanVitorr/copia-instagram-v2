@@ -735,6 +735,7 @@ Grandes telas: acima de 1200px
         width: 23px;
         height: 23px;
         border-radius: 50% 50%;
+        background: url(../img/pexels-jonathan-goncalves-17903054.jpg);
     }
     
     #perfil-2 > a >p {
@@ -843,7 +844,7 @@ Grandes telas: acima de 1200px
         border-radius: 50% 50%;
         cursor: pointer;
  
-        background: url(../img/perfil.png);
+        background: url(../img/pexels-jonathan-goncalves-17903054.jpg);
         background-size: cover;
     }
 
