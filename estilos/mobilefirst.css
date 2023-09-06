@@ -135,7 +135,7 @@ main {
 
 #storys > ul {
     display: flex;
-    gap: 13px;
+    gap: 11px;
     padding: 0 10px;
     background-color: var(--cor5); 
 }
@@ -174,7 +174,7 @@ li > p {font-size: 0.9rem; margin-top: 3px;}
 /* publicações */
 
 #publicações {
-    width: 440px;
+    width: 434px;
     padding: 10px;
     margin-top: 10px;
     border: 1px solid black;

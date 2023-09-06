@@ -42,7 +42,27 @@ const listaPerfisStorys = [
       nome: 'lucas78',
       imagem: 'lucas.jpg'
 
-   }
+   },
+   {
+      nome: 'marcia',
+      imagem: 'marcia.jpg'
+
+   },
+   {
+      nome: 'lety',
+      imagem: 'leticia.jpg'
+
+   },
+   {
+      nome: 'aninhas2',
+      imagem: 'ana.jpg'
+
+   },
+   {
+      nome: 'aninhas2',
+      imagem: 'ana.jpg'
+
+   },
 ];
 
 for (const perfisStorys of listaPerfisStorys) {
