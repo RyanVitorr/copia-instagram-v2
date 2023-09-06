@@ -209,6 +209,8 @@ li > p {font-size: 1rem; margin-top: 3px;}
     gap: 8px;
 }
 
+.perfil-publi > div > p {font-size: 1.1rem;}
+
 .area-perfil-publi {
     width: 40px;
     height: 40px;
@@ -254,3 +256,27 @@ li > p {font-size: 1rem; margin-top: 3px;}
 .bi-chat {
     rotate: 180deg;
 }
+
+/* interaçaõ publi*/
+
+
+.icons-interacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.icons-interacao > div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+.icons:nth-child(1) {font-size: 1.6rem;}
+.icons:nth-child(2) {font-size: 1.6rem;}
+.icons:nth-child(3) {font-size: 1.6rem;}
+.icons:nth-child(4) {font-size: 1.4rem;}
