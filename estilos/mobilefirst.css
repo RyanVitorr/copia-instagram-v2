@@ -116,37 +116,54 @@ header {
 
 /* main */
 
-
 main {
   width: 100vw;
   padding: 10px; 
 }
 
-
 /* storys */
 #storys {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     width: 100%;
     height: 90px;
     margin-top: 5px;
     overflow: hidden;
+    position: relative;
 }
+
+.seta {
+    position: absolute;
+    filter: invert(1);
+    font-size: 23px;
+}
+
+.seta:nth-child(1){left: 12px;bottom: 43px;display: none;}
+.seta:nth-child(2){right: 20px;bottom: 43px;}
 
 #storys > ul {
     display: flex;
-    gap: 11px;
+    gap: 1.1rem;
     padding: 0 10px;
     background-color: var(--cor5); 
+    overflow: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+#storys > ul::-webkit-scrollbar {
+    display: none;
 }
 
 #storys > ul > li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
-li > p {font-size: 0.9rem; margin-top: 3px;}
+li > p {font-size: 1rem; margin-top: 3px;}
 
 .storys-area {
     width: 60px;
@@ -174,7 +191,7 @@ li > p {font-size: 0.9rem; margin-top: 3px;}
 /* publicações */
 
 #publicações {
-    width: 434px;
+    width: 100%;
     padding: 10px;
     margin-top: 10px;
     border: 1px solid black;
@@ -198,6 +215,7 @@ li > p {font-size: 0.9rem; margin-top: 3px;}
     padding: 2px;
     background-image: linear-gradient(45deg,var(--primary),var(--primary),var(--cor4),var(--cor0));
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .foto-fundo {
@@ -213,6 +231,10 @@ li > p {font-size: 0.9rem; margin-top: 3px;}
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.bi-three-dots {
+    cursor: pointer;
 }
 
 .conteudo-publi {
