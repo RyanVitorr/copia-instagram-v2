@@ -5,474 +5,230 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor0:#4c3f91;
+    --cor1:#9145b6;
+    --cor2:#b958A5;
+    --cor4:#ff5677;
+    --cor5:#ffffff;
+    --cor6:#0c8ce94d;
+    --cor7:rgb(235, 234, 234);
+    --cor8:#f1f1f1;
+    --black:#130f0d;
+    --primary:hsl(32,98%,56%);
+    --white:#f0f0f9;
 }
 
 /* barra de navegação topo */
 
-header {
-    width: 100%;
-    height: 55px;  
-    background-color: white;
+header {  
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 55px;
 }
 
-section#navegation-1 {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-}
-
-#barra-navegacao {
+#header-top {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 9px;
     width: 100%;
-    height: 36px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+    height: 55px; 
+    padding: 0 10px;
+    border-bottom: 1px solid var(--cor7);
     background-color: white;
+    position: fixed;
 }
-
-/* Logo Instagram*/
 
 #logo-insta {
-    position: relative;
-    display: flex;
-}
-
-.logo-insta {
-    width: 6.5em;
-    margin-top: 2px;
+    height: 1.8rem;
     cursor: pointer;
 }
 
-.seta-baixo {
-    width: 0.6em;
-    height: 0.6em;
-    margin: 10px 0px 0px 10px;
+#seta-baixo-header {
+    font-size: 1.1rem;
+    margin-right: 5px;
     cursor: pointer;
 }
 
-/* infos de seguindo e favoritos*/
-#segui-fav {
-    display: none;
-    position: absolute;
-    top: 8px;
-    left: 130px; 
-}
-
-#segui-fav > ul {
+#seach-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 80px;
-    width: 110px;
-    background-color: white;
-    border-radius: 8px;  
+    gap: 10px;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 7px;
+    background-color: rgb(235, 234, 234);
 }
 
-#segui-fav > ul > li {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    padding-top: 10px;
-    color: rgba(0, 0, 0, 0.986);
-    cursor: pointer;
+.bi-search {
+    color: rgb(128, 126, 126);
 }
 
-#seguindo {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
-    border-radius: 8px 8px 0 0;
-}
-
-#favoritos {
-    border-radius: 0px 0px 8px 8px;
-}
-
-#segui-fav > ul > li:hover {
-    background-color: rgba(241, 241, 241, 0.925);
-}
-
-/* Barra de pesquisa e ícone de notificação*/
-
-#busca > input {
-    height: 33px;
-    width: 235px;
-    text-align: left;
-    padding: 10px;
+#seach-container > input {
+    width: 200px;
     border: none;
-    border-radius: 8px;
-    background-color: rgba(209, 206, 206, 0.466);
+    background-color: rgb(235, 234, 234);
 }
 
-.not-nav {
-    width: 1.5em;
-    margin-right: 20px;
+#seach-container > input:focus {
+    outline: none;
+}
+
+.fa-regular {
+    font-size: 1.5rem;
+    color: black;
     cursor: pointer;
 }
 
-/* barra de navegação inferior*/
+.fa-regular:hover { transform: scale(1.1); transition: 1s;}
 
-section#navegation-2 {
+/* header end */
+
+#header-end {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 40px;
-
-    position: absolute;
-    bottom: 0px;
+    justify-content: space-around;
+    width: 100vw;
+    height: 46px;
     position: fixed;
-    border-top: 1px solid rgba(0, 0, 0, 0.233);
-    background-color: white;
-
+    bottom: 0;
+    border-top: 1px solid var(--cor7);
 }
 
-#nav-infos {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-
-}
-
-#nav-infos > ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding-left: 20px;
-}
-
-/* icones do menu inferior */
-
-menu#nav-infos > ul > li {
-    margin-right: 40px;
-}
-
-/* icone home */
-
-#home > a > p {display: none;}
-img.home {width: 1.5em;}
-
-/* icone reels */
-
-#reels > a > p {display: none;}
-img.reels {width: 1.3em;}
-
-/* icone explorar*/
-
-#explorar > a > p {display: none;}
-img.explorar {width: 1.6em;}
-
-/* icone publicar */
-
-#publicar > a > p {display: none;}
-img.publicar {width: 1.3em;}
-
-/* icone mensagens */
-#mensagens > a > p {display: none;}
-img.mensagens {width: 1.4em;}
-
-/* perfil*/
-#perfil {
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    border-radius: 50% 50%;
-    margin-bottom:  5px;
-    cursor: pointer;  
-
-    background: url(../img/pexels-jonathan-goncalves-17903054.jpg);
-    background-size: cover
-}
-#perfil > a > p {display: none;}
+#home {font-size: 1.4rem; cursor: pointer;}
+#explorar {font-size: 1.4rem; cursor: pointer;}
+#publicar{font-size: 1.2rem; cursor: pointer;}
+#mensagens{font-size: 1.4rem; cursor: pointer;}
+#reels-icon {width: 1.3rem; cursor: pointer;}
+#icone-foto-perfil {width: 1.5rem;}
 
 
-/* icone perfil-2*/
-#perfil-2 {display: none;}
-
-/* icone logos*/
-#logo-insta-2 {display: none;}
-#logo-insta-3 {display: none;}
-
-/* icone pesquisar */
-#pesquisar {display: none}
-
-/* icone notificações */
-#notificacoes {display: none;}
-
-/* icone criar */
-#criar {display: none;}
-
+#home:hover{ transform: scale(1.1); transition: 1s;}
+#explorar:hover{ transform: scale(1.1); transition: 1s;}
+#publicar:hover{ transform: scale(1.1); transition: 1s;}
+#mensagens:hover{ transform: scale(1.1); transition: 1s;}
+#reels-icon:hover{transform: scale(1.1); transition: 1s;}
+#icone-foto-perfil{transform: scale(1.1); transition: 1s;}
 
 /* main */
 
+
 main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  padding: 10px; 
 }
 
-#main-content {
-    align-items: center;
-    justify-content: center;
-}
 
 /* storys */
-
-section#story {
+#storys {
     display: flex;
-    justify-content: center;
-    align-items: center;  
-    width: 410px;
-    height: 110px;
-    margin: 13px 0px; 
-    border: 1px solid rgba(0, 0, 0, 0.233);
-    border-radius: 7px;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    margin-top: 5px;
     overflow: hidden;
 }
 
-.perfil-story {
+#storys > ul {
+    display: flex;
+    gap: 13px;
+    padding: 0 10px;
+    background-color: var(--cor5); 
+}
+
+#storys > ul > li {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 4px 0px 0px 14px;
-    cursor: pointer;
 }
 
-.border-color {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 55px;
-    width: 55px;
-    background: linear-gradient(to top right, rgb(247, 238, 162), rgb(250, 206, 12), rgb(250, 99, 30), rgb(248, 68, 68), rgb(255, 2, 255), rgb(255, 2, 255));
-    border-radius: 50% 50%;
-    
+li > p {font-size: 0.9rem; margin-top: 3px;}
+
+.storys-area {
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+    background-image: linear-gradient(45deg,var(--primary),var(--primary),var(--cor4),var(--cor0));
+    border-radius: 50%;
 }
 
-.perfil-img {
-    height: 52px;
-    width: 52px;
-    border-radius: 50% 50%;
+.fotos {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    background-color: var(--cor5);
+    border-radius: 50%;
 }
 
-#perfil-img-1 {
-    background: url(../img/pexels-victor-oluwa-17928235.jpg);
-    background-size: cover;
-}
-
-#perfil-img-2 {
-    background: url(../img/pexels-santiago-sauceda-gonzález-17910266.jpg);
-    background-size: cover;
-}
-
-#perfil-img-3 {
-    background: url(../img/pexels-daniel-xavier-1239291.jpg);
-    background-size: cover;
-}
-
-#perfil-img-4 {
-    background: url(../img/pexels-fabian-reck-17888977.jpg);
-    background-size: cover;
-}
-
-#perfil-img-5 {
-    background: url(../img/pexels-andrea-piacquadio-733872.jpg);
-    background-size: cover;
-}
-
-#perfil-img-6 {
-    background: url(../img/pexels-vinicius-wiesehofer-1130626\ \(1\).jpg);
-    background-size: cover;
-}
-
-.perfil-story > p {
-    font-size: 0.9em;
+.fotos > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* publicações */
 
-/* config geral*/
-
-section#publicacoes {
-    width: 410px;
-    height: 618px;
-}
-.publicacoes {
-    width: 410px;
-    height: 618px;
-    border: 1px solid rgba(0, 0, 0, 0.233);
-    border-radius: 7px;
-    margin-bottom: 25px;
+#publicações {
+    width: 440px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
 }
 
-/* parte supeior da publi*/
-
-.superior-publi {
+.perfil-publi {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.perfil-publi > div {
+    display: flex;
     align-items: center;
-    height: 45px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+    gap: 8px;
 }
 
-.perfil-img-publi-1 {
-    height: 35px;
-    width: 35px;
-    margin-left: 10px;
-    border-radius: 50% 50%;
-    border: 1px solid black;
-    cursor: pointer;
-
-    background: url(../img/pexels-ali-pazani-2787341.jpg);
-    background-size: cover;
-}
-
-.perfil-img-publi-2 {
-    height: 35px;
-    width: 35px;
-    margin-left: 10px;
-    border-radius: 50% 50%;
-    border: 1px solid black;
-    cursor: pointer;
-
-    background: url(../img/pexels-edgardo-andrade-17843273.jpg);
-    background-size: cover;
-}
-
-
-.superior-publi > p {
-    margin-left: -265px;
-}
-
-.superior-publi > span {
-    margin: 0 10px 5px 0;
-}
-
-/* parte do meio da publi*/
-
-.meio-publi {
-    height: 418px;
-  
-}
-
-.img-publi-1 {
-    height: 418px;
-    background: url(../img/veneza.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.img-publi-2 {
-    height: 418px;
-    background: url(../img/rua.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
-/* parte inferior da publi*/
-
-/* config geral*/
-
-div.inferior-publi {
-    height: 153px;
-}
-
-/* interação */
-
-div.interacao {
+.area-perfil-publi {
+    width: 40px;
     height: 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.233);
+    padding: 2px;
+    background-image: linear-gradient(45deg,var(--primary),var(--primary),var(--cor4),var(--cor0));
+    border-radius: 50%;
 }
 
-div.interacao > ul {
-    display: flex;
-    align-items: center;
-    justify-content: left;
+.foto-fundo {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    background-color: var(--cor5);
+    border-radius: 50%;
 }
 
-div.interacao > ul > li {
-    margin: 10px 0px 0px 15px; 
+.foto-perfil-publi {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-/* interação icones*/
-
-.cora-inte {
-    width: 1.6em;
+.conteudo-publi {
+    width: 100%;
+    height: 530px;
+    margin-top: 9px;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
-.coment-inte {
-    width: 1.3em;
+.conteudo-publi > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.enviar-inte {
-    width: 1.5em;
-}
-
-.enviar-inte {
-    width: 1.3em;
-}
-
-.salvar-inte {
-    width: 1.3em;
-    height: 18px;
-    margin-left: 250px;
-}
-
-
-/* descrição da publi */
-
-
-div.text-descricao > p {
-    font-size: 0.9em;
-    margin: 5px 0 0 15px;
-}
-
-div.text-descricao > p > a {
-    color: black;
-}
-
-p.todos-comentarios {
-    color: rgba(0, 0, 0, 0.664);
-    padding-top: 5px
-}
-
-div.hora-traducao {
-    display: flex;
-    justify-content: left;
-    align-items: end;
-    height: 28px;
-    padding-left: 15px;
-}
-
-div.hora-traducao > p {
-    font-size: 0.7em;
-    color: rgba(0, 0, 0, 0.63);
-    margin-right: 10px;
-} 
-
-div.hora-traducao > a {
-    font-size: 0.9em;
-    color: black;
-}
-
-div#final {
-    height: 20px;
-}
-
-/* meu perfil + sugestões */
-
-#perfis-sugestoes-main {
-    display: none;
+.bi-chat {
+    rotate: 180deg;
 }
