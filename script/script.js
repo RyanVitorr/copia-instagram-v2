@@ -8,7 +8,6 @@ document.getElementById("seta-baixo-header").addEventListener("click", () => {
    }
 });
 
-
 const listaPerfisStorys = [
    {
       id: 1,
