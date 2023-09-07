@@ -108,10 +108,8 @@ header {
     outline: none;
 }
 
-.coracao-header-top {
-    transform: scale(1.1); transition: 1s;
-    cursor: pointer;
-}
+.fa-heart {cursor: pointer;font-size: 25px;}
+.fa-heart:hover{transform: scale(1.1); transition: 1s;}
 
 /* header fundo*/
 
@@ -127,20 +125,20 @@ header {
     background-color: white;
 }
 
-#home {font-size: 20px; cursor: pointer;}
-#explorar {font-size: 20px; cursor: pointer;}
-#publicar{font-size: 20px; cursor: pointer;}
-#mensagens{font-size: 20px; cursor: pointer;}
-#reels-icon {width: 20px; cursor: pointer;}
-#icone-foto-perfil {width: 20px;}
+#home {font-size: 21px; cursor: pointer;}
+#explorar {font-size: 21px; cursor: pointer;}
+#publicar{font-size: 21px; cursor: pointer;}
+#mensagens{font-size: 21px; cursor: pointer;}
+#reels-icon {width: 21px; cursor: pointer;}
 
 .icones-header-end:hover{transform: scale(1.1); transition: 1s;}
 
 #icone-foto-perfil {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     object-fit: cover;
+    cursor: pointer
 }
 
 /* main */
@@ -167,6 +165,7 @@ main {
 .seta {
     filter: invert(1);
     font-size: 23px;
+    cursor: pointer;
 }
 
 .seta:nth-child(1){position: absolute; left: 15px; bottom: 43px;display: none;}
@@ -174,7 +173,7 @@ main {
 
 #storys > ul {
     display: flex;
-    gap: 15px;
+    gap: 13px;
     overflow-x: auto;
     overflow-y: hidden;
     -ms-overflow-style: none; /* IE and Edge */
@@ -300,7 +299,12 @@ li > p {font-size: 14px; margin-top: 3px;}
     width: 100%;
 }
 
-.icones-publi{font-size: 20px;  cursor: pointer;}
+.fa-comment{font-size: 25px; cursor: pointer;}
+.fa-comment:hover{transform: scale(1.1); transition: 1s;}
+.bi-send{font-size: 23px; cursor: pointer;}
+.bi-send:hover{transform: scale(1.1); transition: 1s;}
+.bi-bookmark{font-size: 23px; cursor: pointer;}
+.bi-bookmark:hover{transform: scale(1.1); transition: 1s;}
 
 .descricoes-interacoes {
     display: flex;
@@ -316,6 +320,7 @@ li > p {font-size: 14px; margin-top: 3px;}
     color: black;
     font-weight: bolder;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .descricoes-interacoes > p {font-size: 14px;}
@@ -323,8 +328,11 @@ li > p {font-size: 14px; margin-top: 3px;}
     color: black;
     font-weight: bolder;
     font-size: 15px;
+    cursor: pointer;
 }
-.coment{color: rgb(134, 132, 132);}
+
+.tradu{cursor: pointer;}
+.coment{color: rgb(134, 132, 132); cursor: pointer;}
 
 .descricoes-interacoes > input {
     margin-bottom: 35px;

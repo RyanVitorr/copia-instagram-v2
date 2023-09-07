@@ -10,62 +10,62 @@ document.getElementById("seta-baixo-header").addEventListener("click", () => {
 
 const listaPerfisStorys = [
    {
-      id: 1,
+      id: "perfil-1",
       nome: 'clarinhaa',
       imagem: 'clara.jpg'
    },
    {
-      id: 2,
+      id: "perfil-2",
       nome: 'pedro368',
       imagem: 'pedro.jpg'
    },
    {
-      id:3 ,
+      id: "perfil-3",
       nome: 'marcos32',
       imagem: 'marcos.jpg'
    },
    {
-      id: 4,
+      id: "perfil-4",
       nome: 'phzera123',
       imagem: 'ph.jpg'
    },
    {
-      id: 5,
+      id: "perfil-5",
       nome: 'julia_maria',
       imagem: 'julia.jpg'
    },
    {
-      id: 6,
+      id: "perfil-6",
       nome: 'aninhas2',
       imagem: 'ana.jpg'
    },
    {
-      id: 7,
+      id: "perfil-7",
       nome: 'lucas78',
       imagem: 'lucas.jpg'
    },
    {
-      id: 8,
+      id: "perfil-8",
       nome: 'marcia',
       imagem: 'marcia.jpg'
    },
    {
-      id: 9,
+      id: "perfil-9",
       nome: 'lety',
       imagem: 'leticia.jpg'
    },
    {
-      id: 10,
+      id: "perfil-10",
       nome: 'jonax',
       imagem: 'jonas.jpg'
    },
    {
-      id: 11,
+      id: "perfil-11",
       nome: 'juliolima',
       imagem: 'julio.jpg'
    },
    {
-      id: 12,
+      id: "perfil-12",
       nome: 'Jamilly<3',
       imagem: 'jamilly.jpg'
    }
@@ -93,6 +93,7 @@ const setaRight = document.querySelector(".seta-right");
 let currentItem = 0;
 const items = document.querySelectorAll(".items");
 const maxItems = items.length;
+const idPerfil = document.getElementById("perfil-6");
 
 controls.forEach((control) => {
    control.addEventListener("click", () => {
@@ -109,9 +110,9 @@ controls.forEach((control) => {
       }
 
       if(isRight == true) {
-         document.getElementById("12").scrollIntoView({ block: "end", behavior: "smooth" });
+         document.getElementById("perfil-12").scrollIntoView({ block: "end", behavior: "smooth" });
       } else {
-         document.getElementById("1").scrollIntoView({ block: "end", behavior: "smooth" });
+         document.getElementById("perfil-1").scrollIntoView({ block: "end", behavior: "smooth" });
       }
    })
 });
@@ -154,11 +155,11 @@ for (const infosPubli of perfilPubli) {
 <div class="interacao-publi">
     <div class="icons-interacao">
         <div>
-            <i class="fa-regular fa-heart icones-publi"></i>
-            <i class="fa-regular fa-comment icones-publi"></i>
-            <i class="bi bi-send icones-publi"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-comment"></i>
+            <i class="bi bi-send"></i>
         </div>
-        <i class="bi bi-bookmark icones-publi"></i>
+        <i class="bi bi-bookmark"></i>
     </div>
 
     <div class="descricoes-interacoes">
