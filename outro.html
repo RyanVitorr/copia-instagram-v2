@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="${infosPubli.id}" class="previa-card">
+        <div class="perfil">
+            <div class="perfil-publi">
+                <div>
+                   <div class="area-perfil-publi">
+                      <div class="foto-fundo">
+                         <img class="foto-perfil-publi" src="img/${infosPubli.imagemPerfil}" alt="">
+                      </div>
+                   </div>
+                   <p>${infosPubli.nome}</p>
+                   <p>${infosPubli.nomeReal}</p>
+                </div>               
+            </div>
+        </div>
+
+        <div class="infos">
+            <div class="postagens">
+                <h3>${infosPubli.publicacoes}</h3>
+                <p>Publicações</p>
+            </div>
+            <div class="seguidores">
+                <h3>${infosPubli.seguidores}</h3>
+                <p>Seguidores</p>
+            </div>
+            <div class="seguindo">
+                <h3>${infosPubli.seguindo}</h3>
+                <p>Seguindo</p>
+            </div>
+        </div>
+
+        <div class="publicacoes">
+            <img src="img/publi1.jpg" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+
+        <div class="interacao">
+            <div class="mensagem">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <p>Enviar mensagem</p>
+            </div>
+            
+            <div class="seguindo">
+                <p>Seguindo</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -121,25 +121,29 @@ controls.forEach((control) => {
 const perfilPubli = [
 
    {
+      id:"id-card1",
+      idPrevia: "previa-1",
       nome: "brunin",
+      nomeReal: "Bruno Lima",
       imagemPerfil: "brunin.jpg",
       imagemPubli: "rua.jpeg",
-      nomeReal: "Bruno Costa",
-      publicacoes: 50,
-      seguidores: "1.003 mil",
-      seguindo: "2.364 mil",
+      publicacoes: 35,
+      seguidores: 652,
+      seguindo: "1.103 mil",
       publi1: "publi1.jpg",
       publi2: "publi2.jpg",
       publi3: "publi3.jpg"
    },
    {
+      id:"id-card2",
+      idPrevia: "previa-2",
       nome: "josex",
+      nomeReal:"José Elias",
       imagemPerfil: "caio.jpg",
       imagemPubli: "veneza.jpeg",
-      nomeReal: "Bruno Costa",
-      publicacoes: 130,
-      seguidores: "6.592 mil",
-      seguindo: 983,
+      publicacoes: 132,
+      seguidores:"1.359 mil",
+      seguindo: 986,
       publi1: "publi4.jpg",
       publi2: "publi5.jpg",
       publi3: "publi6.jpg"
@@ -148,99 +152,128 @@ const perfilPubli = [
 
 for (const infosPubli of perfilPubli) {
 
-
-   const publicacoes = ` <div class="publi-card">
-   <div class="perfil-publi">
-      <div>
-         <div class="area-perfil-publi">
+   const publicacoes =  
+  `<div class="publi-card">
+      <div class="perfil-publi">
+         <div>
+            <div class="area-perfil-publi ${infosPubli.id}">
                <div class="foto-fundo">
                   <img class="foto-perfil-publi" src="img/${infosPubli.imagemPerfil}" alt="">
                </div>
             </div>
-            <p>${infosPubli.nome}</p>
+            <p class="nome-perfil-publi ${infosPubli.id}">${infosPubli.nome}</p>
          </div>
          <i class="bi bi-three-dots"></i>
       </div>
 
-      <div class="previa-perfil">
-         <div class="perfil-e-nome">
-                 
-         <div class="area-perfil-publi">
-            <div class="foto-fundo">
-               <img class="foto-perfil-publi" src="img/${infosPubli.imagemPerfil}" alt="">
+      <section id="${infosPubli.idPrevia}" class="previa-card">
+         <div class="perfil perfil-previa">
+            <div class="perfil-publi">
+               <div>
+                  <div class="area-perfil-publi area-perfil-previa">
+                     <div class="foto-fundo">
+                        <img class="foto-perfil-publi" src="img/${infosPubli.imagemPerfil}" alt="">
+                     </div>
+                  </div>
+                  <div class="nome">
+                     <h4>${infosPubli.nome}</h4>
+                     <p>${infosPubli.nomeReal}</p>
+                  </div>
+               </div>               
             </div>
          </div>
-         <div class="nome">
-             <p>${infosPubli.nome}</p>
-             <p>${infosPubli.nomeReal}</p>
+
+         <div class="infos">
+            <div class="postagens">
+              <h3>${infosPubli.publicacoes}</h3>
+              <p>Publicações</p>
             </div>
-         </div> 
-       <div class="infos">
-         <div class="infos-post">
-            <div class="num-infos">
-               <h3>${infosPubli.publicacoes}</h3>
-               <p>Publicações</p>
+            <div class="seguidores">
+              <h3>${infosPubli.seguidores}</h3>
+              <p>Seguidores</p>
             </div>
+            <div class="seguindo">
+              <h3>${infosPubli.seguindo}</h3>
+              <p>Seguindo</p>
+            </div>
+         </div>
+
+         <div class="publicacoes">
             <img src="img/${infosPubli.publi1}" alt="">
-         </div>
-         <div class="infos-post">
-            <div class="num-infos">
-               <h3>${infosPubli.seguidores}</h3>
-               <p>Seguidores</p>
-            </div>
             <img src="img/${infosPubli.publi2}" alt="">
-         </div>
-         <div class="infos-post">
-            <div class="num-infos">
-               <h3>${infosPubli.seguindo}</h3>
-               <p>Seguindo</p>
-            </div> 
             <img src="img/${infosPubli.publi3}" alt="">
          </div>
-      </div>
-    
-      <div class="interacao">
-         <div class="msg">
-            <i class="fa-brands fa-facebook-messenger"></i>
-            <p>Enviar mensagem</p>
-         </div>
-         <div class="seg">
-            <p>Seguindo</p>
-         </div>
-         </div>
-      </div>
 
-   <div class="conteudo-publi">
-      <img src="img/${infosPubli.imagemPubli}" alt="publicação">
-   </div>
-
-   <div class="interacao-publi">
-      <div class="icons-interacao">
-         <div>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-comment"></i>
-            <i class="bi bi-send"></i>
+         <div class="interacao">
+            <div class="mensagem">
+               <i class="fa-brands fa-facebook-messenger"></i>
+               <p>Enviar mensagem</p>
+            </div>
+         
+            <div class="seguindo-int">
+               <p>Seguindo</p>
+            </div>
          </div>
-         <i class="bi bi-bookmark"></i>
+      </section>
+
+      <div class="conteudo-publi">
+         <img src="img/${infosPubli.imagemPubli}" alt="publicação">
       </div>
 
-      <div class="descricoes-interacoes">
-         <p>
-            Curtido por <a href="#">marcos32</a> e <a href="#">outras pessoas</a>
-         </p>
-        
-         <p>
-            <a href="#">${infosPubli.nome}</a> Mais uma dessa vista!!
-         </p>
+      <div class="interacao-publi">
+         <div class="icons-interacao">
+            <div>
+               <i class="fa-regular fa-heart"></i>
+               <i class="fa-regular fa-comment"></i>
+               <i class="bi bi-send"></i>
+            </div>
+            <i class="bi bi-bookmark"></i>
+         </div>
+         <div class="descricoes-interacoes">
+            <p>Curtido por <a href="#">marcos32</a> e <a href="#">outras pessoas</a></p>
 
-         <span class="tradu">Ver tradução</span>
-         <span class="coment">Ver todos os 8 comentários</span>
+            <p><a href="#">${infosPubli.nome}</a> Mais uma dessa vista!!</p>
 
-         <input type="text" placeholder="Adicione um comentário...">
+            <span class="tradu">Ver tradução</span>
+            <span class="coment">Ver todos os 8 comentários</span>
+
+            <input type="text" placeholder="Adicione um comentário...">
+         </div>
       </div>
-   </div>
-</div>`
+   </div>`
 
    document.getElementById("publicacoes").innerHTML += publicacoes;
 };
 
+const previa1 = document.getElementById("previa-1");
+const previa2 = document.getElementById("previa-2");
+
+const perfils = document.querySelectorAll(".area-perfil-publi, .nome-perfil-publi");
+
+
+perfils.forEach((perfil) => {
+   perfil.addEventListener("mouseover", () => {
+      const id1 = perfil.classList.contains("id-card1");
+      const id2 = perfil.classList.contains("id-card2");
+      if(id1 == true) {
+         previa1.style.display = "block";
+      } 
+      if(id2 == true) {
+         previa2.style.display ="block"
+      }
+   });
+});
+
+
+perfils.forEach((perfil) => {
+   perfil.addEventListener("mouseout", () => {
+      const id1 = perfil.classList.contains("id-card1");
+      const id2 = perfil.classList.contains("id-card2");
+      if(id1 == true) {
+         previa1.style.display = "";
+      } 
+      if(id2 == true) {
+         previa2.style.display = "";
+      }
+   });
+});
