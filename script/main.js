@@ -70,7 +70,7 @@ for (const perfisStorys of listaPerfisStorys) {
    `<li id="${perfisStorys.id}" class="items">
       <div class="storys-area">
          <div class="fotos">
-            <img src="../img/storys/${perfisStorys.imagem}" alt="foto do perfil">
+            <img src="./img/storys/${perfisStorys.imagem}" alt="foto do perfil">
          </div>
       </div>
       <p>${perfisStorys.nome}</p>
@@ -118,7 +118,7 @@ for (const infosPubli of perfilPubli) {
          <div>
             <div class="area-perfil-publi ${infosPubli.id}">
                <div class="foto-fundo">
-                  <img class="foto-perfil-publi" src="../img/storys/${infosPubli.imagemPerfil}" alt="">
+                  <img class="foto-perfil-publi" src="./img/storys/${infosPubli.imagemPerfil}" alt="">
                </div>
             </div>
             <p class="nome-perfil-publi ${infosPubli.id}">${infosPubli.nome}</p>
@@ -132,7 +132,7 @@ for (const infosPubli of perfilPubli) {
                <div>
                   <div class="area-perfil-publi area-perfil-previa">
                      <div class="foto-fundo">
-                        <img class="foto-perfil-publi" src="../img/storys/${infosPubli.imagemPerfil}" alt="">
+                        <img class="foto-perfil-publi" src="./img/storys/${infosPubli.imagemPerfil}" alt="">
                      </div>
                   </div>
                   <div class="nome">
@@ -159,9 +159,9 @@ for (const infosPubli of perfilPubli) {
          </div>
 
          <div class="publicacoes">
-            <img src="../img/publicacoesPrevia/${infosPubli.publi1}" alt="">
-            <img src="../img/publicacoesPrevia/${infosPubli.publi2}" alt="">
-            <img src="../img/publicacoesPrevia/${infosPubli.publi3}" alt="">
+            <img src="./img/publicacoesPrevia/${infosPubli.publi1}" alt="">
+            <img src="./img/publicacoesPrevia/${infosPubli.publi2}" alt="">
+            <img src="./img/publicacoesPrevia/${infosPubli.publi3}" alt="">
          </div>
 
          <div class="interacao">
@@ -177,7 +177,7 @@ for (const infosPubli of perfilPubli) {
       </section>
 
       <div class="conteudo-publi">
-         <img src="../img/publicacoes/${infosPubli.imagemPubli}" alt="publicação">
+         <img src="./img/publicacoes/${infosPubli.imagemPubli}" alt="publicação">
       </div>
 
       <div class="interacao-publi">
@@ -237,7 +237,7 @@ for (const perfis of sugestoes)  {
    const perfisSugestoes = `
    <div class="container-perfil">
       <div class="perfil-nome">
-         <img src="../img/sugestoes/${perfis.imagem}" alt="Foto de perfil">
+         <img src="./img/sugestoes/${perfis.imagem}" alt="Foto de perfil">
          <div class="nome-e-seguidores">
             <p>${perfis.nome}</p>
             <span>Seguido(a) por ${perfis.seguidor}</span>
