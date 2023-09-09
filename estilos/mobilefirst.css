@@ -37,7 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 55px; 
     padding: 0 20px;
     border-bottom: 1px solid var(--cor7);
@@ -108,7 +108,7 @@ header {
 }
 
 #seach-container > input {
-    width: 8rem;
+    width: 6rem;
     border: none;
     background-color: rgb(235, 234, 234);
 }
