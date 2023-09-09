@@ -11,6 +11,22 @@ Desktops: 922px até 1200px
 Grandes telas: acima de 1200px
 */
 
+@media only screen and (min-width: 500px) {
+
+     
+    #seach-container > input {
+        width: 10rem;
+        border: none;
+        background-color: rgb(235, 234, 234);
+    }
+
+    /*storys*/
+
+    #storys{max-width: 580px;}
+
+
+    #publicacoes {width: 450px;}
+}
 
 @media only screen and (min-width: 770px) {
 
@@ -18,6 +34,7 @@ Grandes telas: acima de 1200px
         height: 10px;
     }
     /* header top*/
+  
     #header-top {
         display: none;
     }
@@ -35,43 +52,221 @@ Grandes telas: acima de 1200px
         border-right: 1px solid var(--cor7);
     }
 
-
     #icons-principais {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: inherit;
-        gap: 35px;
         width: 100%;
-        height: 650px;
+        height: 500px;
         padding: 10px;
+    }
+
+    .div-icones {
+        width: 40px;
+        height: 40px;
+    }
+
+    .div-icones:hover{
+        border-radius: 8px;
+        background-color: rgba(243, 242, 242, 0.952);
+    }
+
+    .div-icones > i {
+        font-size: 1.1rem;
     }
    
     .div-icones > p {
         align-items: center;
         justify-content: center;
-        width: 120px;
-        height: 40px;
-
+        width: 100px;
+        height: 30px;
         border-radius: 10px;
         box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.137);
         background-color: white;
         position: fixed;
         left: 70px;
+        font-size: 13px;
     }
-    
-    #espaco{margin-bottom: 230px;}
+
+    #espaco{ display: flex; margin-bottom: 50px;}
     .pesquisa {color: black;}
     #icone-foto-perfil{ display: flex;}
     #coracao{display: flex;}
     #pesquisa{display: flex;}
     #instagram {display: block;}
     #menu {display: flex;}
-
+    #criar{display: none;}
+    #publicar{display: flex}
+    .fa-heart { margin-right: 0;}
 
     /* storys*/
     #storys {
-        margin-top: 0;
+        margin-top: 15px;
     }
+
+    li > p {font-size: 12px; margin-top: 3px;}
 }
     
+@media only screen and (min-width: 1160px) {
+    /* perfil-e-sugestoes */
+
+    #perfil-e-sugestoes {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin-left: 30px;
+        padding: 55px 30px 30px 30px;
+    }
+
+    #perfil {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    #perfil > span > a {
+        font-size: 12px;
+        color: rgb(0, 132, 255);
+    }
+
+    #perfil-infos {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #perfil-infos> img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    #nome {
+        font-weight: 550;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    /* sugestoes */
+
+    #sugestoes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    #sugestoes > p {
+        font-size: 12px;
+        color: rgb(124, 124, 124);
+        font-weight: 550;
+    }
+
+    #sugestoes > span > a {
+        font-size: 12px;
+        color: black;
+    }
+
+    /* perfis de sugestões */
+
+
+    #perfis-sugestoes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .container-perfil {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .perfil-nome {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .perfil-nome > img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .nome-e-seguidores > p {
+        font-size: 12px;
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .nome-e-seguidores > span {
+        font-size: 12px;
+    }
+
+    .container-perfil > span > a {
+        font-size: 12px;
+        color: rgb(0, 132, 255);  
+    }
+
+}
+
+@media only screen and (min-width: 1260px) {
+  
+
+    main{
+        margin-left: 5rem;
+    }
+
+   /* header lateral */
+
+    #header-end {
+        width: 200px;
+    } 
+
+    #logo-insta-header-end {
+        display: block;
+        height: 22px;
+        margin-left: 10px;
+    }
+    #instagram{display: none;}
+
+    .div-icones{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+        height: 40px;
+        gap: 15px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .div-icones > p {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: auto;
+        height: auto;
+        border-radius: none;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0);
+        position: inherit;
+        font-size: 13px;
+    }
+    
+    .p-home {
+        font-weight: 550;
+        font-size: 15px;
+    }
+
+
+
+
+}

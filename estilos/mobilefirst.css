@@ -28,17 +28,18 @@
 header {  
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 55px;
 }
 
 #header-top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 55px; 
-    padding: 0 10px;
+    padding: 0 20px;
     border-bottom: 1px solid var(--cor7);
     background-color: white;
     position: fixed;
@@ -51,8 +52,15 @@ header {
     gap: 10px;
 }
 
+#insta-e-seta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 #logo-insta {
-    height: 1.8rem;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -90,6 +98,7 @@ header {
     gap: 10px;
     height: 35px;
     padding: 0 10px;
+    margin-right: 20px;
     border-radius: 7px;
     background-color: rgb(235, 234, 234);
 }
@@ -99,7 +108,7 @@ header {
 }
 
 #seach-container > input {
-    width: 220px;
+    width: 8rem;
     border: none;
     background-color: rgb(235, 234, 234);
 }
@@ -108,7 +117,7 @@ header {
     outline: none;
 }
 
-.fa-heart {cursor: pointer;font-size: 25px;}
+.not-header-top {cursor: pointer; font-size: 22px; margin-right: 20px;}
 .fa-heart:hover{transform: scale(1.1); transition: 1s;}
 
 /* header fundo*/
@@ -116,6 +125,7 @@ header {
 #header-end {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 46px;
     position: fixed;
@@ -125,14 +135,14 @@ header {
     z-index: 1;
 }
 
-
+#logo-insta-header-end{display: none;}
 
 #icons-principais {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 20px;
-    width: 100%;
+    width: 90vw;
     height: 100%;
 }
 
@@ -143,9 +153,6 @@ header {
     justify-content: center;
 }
 
-.div-icones > i {
-    font-size: 22px;
-}
 
 .div-icones > p {
     display: none;
@@ -155,38 +162,46 @@ header {
 
 #coracao{display: none;}
 #pesquisa{display: none;}
-#reels-icon>img{height: 22px;}
-#instagram {display: none; font-size: 26px;}
+#reels-icon>img{height: 18px;}
+#instagram {display: none; font-size: 20px;}
 #menu {display: none;}
-
-
 .icones-header-end {cursor: pointer;}
 .icones-header-end:hover{transform: scale(1.1); transition: 1s;}
 
 #icone-foto-perfil {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer
 }
 
+#espaco{display: none;}
+
 /* main */
 
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     padding: 10px; 
 }
 
+
+#storys-e-publi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* storys */
+
 #storys {
     display: flex;
     align-items: center;
-    width: 450px;
+    width: 90vw;
     height: 90px;
     margin-top: 5px;
     position: relative;
@@ -221,7 +236,7 @@ main {
     cursor: pointer;
 }
 
-li > p {font-size: 14px; margin-top: 3px;}
+li > p {font-size: 13px; margin-top: 3px;}
 
 .storys-area {
     width: 60px;
@@ -249,14 +264,14 @@ li > p {font-size: 14px; margin-top: 3px;}
 /* publicações */
 
 #publicacoes {
-    width: 450px;
+    width: 90vw;
     height: 100%;
     border-bottom: 1px solid var(--cor7);
 }
 
 .publi-card {
     border-bottom: 1px solid var(--cor8);
-    margin: 25px 0;
+    margin: 35px 0;
     position: relative;
 }
 
@@ -272,7 +287,7 @@ li > p {font-size: 14px; margin-top: 3px;}
     gap: 8px;
 }
 
-.perfil-publi > div > p {font-size: 1.1rem; cursor: pointer;}
+.perfil-publi > div > p {font-size: 13px; cursor: pointer; font-weight: 550; margin-bottom: 10px;}
 
 .area-perfil-publi {
     position: relative;
@@ -301,27 +316,18 @@ li > p {font-size: 14px; margin-top: 3px;}
 
 /* infos previa do perfil*/
 
-#previa-1 {
+.previa-card{
     display: none;
     position: absolute;
     top: 45px;
     left: 3px;
-}
-
-#previa-2 {
-    display: none;
-    position: absolute;
-    top: 45px;
-    left: 3px;
-}
-
-.previa-card {
     width: 370px;
     height: auto;
     background-color: white;
     border-radius: 8px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.315);
 }
+
 
 .perfil-previa {
     padding: 15px;
@@ -350,12 +356,12 @@ li > p {font-size: 14px; margin-top: 3px;}
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 55px;
-    margin: 8px 0 20px ;
+    gap: 60px;
+    margin: 8px 0 20px;
 }
 
-.infos > p {
-    font-size: 1px;
+.infos > div > p {
+    font-size: 12px;
 }
 
 .postagens {
@@ -372,6 +378,7 @@ li > p {font-size: 14px; margin-top: 3px;}
     align-items: center;
     justify-self: center;
     font-size: 14px;
+    margin-right: 10px;
 }
 
 .seguindo {
@@ -460,12 +467,8 @@ li > p {font-size: 14px; margin-top: 3px;}
     width: 100%;
 }
 
-.fa-comment{font-size: 25px; cursor: pointer;}
-.fa-comment:hover{transform: scale(1.1); transition: 1s;}
-.bi-send{font-size: 23px; cursor: pointer;}
-.bi-send:hover{transform: scale(1.1); transition: 1s;}
-.bi-bookmark{font-size: 23px; cursor: pointer;}
-.bi-bookmark:hover{transform: scale(1.1); transition: 1s;}
+.icons-int:hover{transform: scale(1.1); transition: 1s;}
+.icons-int{font-size: 20px;}
 
 .descricoes-interacoes {
     display: flex;
@@ -474,8 +477,6 @@ li > p {font-size: 14px; margin-top: 3px;}
     padding: 0 10px;
 }
 
-.descricoes-interacoes > span{font-size: 13px;}
-.tradu {font-weight: 550;}
 
 .descricoes-interacoes > span >  a {
     color: black;
@@ -484,15 +485,15 @@ li > p {font-size: 14px; margin-top: 3px;}
     cursor: pointer;
 }
 
-.descricoes-interacoes > p {font-size: 14px;}
+.descricoes-interacoes > span{font-size: 12px;}
+.tradu {font-weight: 550; cursor: pointer;}
+.descricoes-interacoes > p {font-size: 12px;}
 .descricoes-interacoes > p >  a {
     color: black;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
 }
-
-.tradu{cursor: pointer;}
 .coment{color: rgb(134, 132, 132); cursor: pointer;}
 
 .descricoes-interacoes > input {
@@ -502,4 +503,10 @@ li > p {font-size: 14px; margin-top: 3px;}
 
 .descricoes-interacoes > input:focus {
     outline: none;
+}
+
+/* perfile sugestoes */
+
+#perfil-e-sugestoes {
+    display: none;
 }
